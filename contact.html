@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Portfolio Contact</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="My contact info">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+	<div id="nav" class="navbar" style="width: 100%">
+		<ul>
+			<li><a href="index.html" class="linklist">Home</a></li>
+
+		</ul>
+		<a href="#" id="ham_button" class="hamburger"><i class="fa fa-bars" aria-hidden="true" onclick="myHamburger();return false;"></i></a>
+
+	</div>
+
+
+	<div class="cont">
+
+		<div id="myHamb" class="ham_lista">
+			<p style="padding: 0 3px 0; margin: 0;">My Projects:</p>
+			<hr style="color: white; margin: 5px 3px;">
+			<ul id="hamb_proj" class="myHambProj">
+<li><a href="calcReact.html" class="link_ham">Calculator</a></li>
+    <li><a href="pacman.html" class="link_ham">Pacman</a></li>
+    <li><a href="silma.html" class="link_ham">Silmarilion Website</a></li>
+    <li><a href="form.html" class="link_ham">Secret code</a></li>
+     <li><a href="proj1.html" class="link_ham">Food app</a></li>
+    <li><a href="event2.html" class="link_ham">Event Planner</a></li>
+			</ul>
+
+		</div>
+
+		<h1 style="padding-bottom: 8px;">Contact:</h1>
+
+		<ul class="cont_list">
+			<li class="email">
+				<i class="fa fa-envelope" aria-hidden="true"></i>anabjrc@gmail.com</li>
+				<li><a href="https://github.com/anchilla">
+					<i class="fa fa-github" aria-hidden="true"></i>github.com/anchilla</a></li>
+					<li><a href="https://www.linkedin.com/in/ana-bajric-b48913212/">
+						<i class="fa fa-linkedin-square" aria-hidden="true"></i>linkedin
+					</a></li>
+					<li class="email"><i class="fa fa-map-marker" aria-hidden="true"></i>Belgrade, Serbia</li>
+
+				</ul>
+
+			</div>
+
+			<footer class="footer" style="background: #28283e">
+				<p>Thank you for visiting my website!</p>
+			</footer>
+
+			<script>
+
+				function myHamburger() {
+					var x = document.getElementById("myHamb");
+					if (x.style.display === "block" ) {
+						x.style.display = "none";
+					} else {
+						x.style.display = "block";
+					}
+				}
+
+				document.addEventListener("mouseup", function mouseClick(event){
+					var x = document.getElementById("myHamb");
+					var y = document.getElementById("hamb_proj");
+					var z = document.getElementById("ham_button");
+
+					if( x.style.display = "block" && event.target.parentNode != x 
+						&& event.target.parentNode != y && event.target.parentNode != z)
+						{x.style.display = "none";
+				}
+			}) 
+
+		</script>
+	</body>
+	
+
+	</html>

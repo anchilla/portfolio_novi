@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Portfolio Project</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My Java project">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <script src="jquery-3.6.0.js"></script>
+  <link rel="stylesheet" href="event1.css">
+		</head>
+<body>
+<div id="nav" class="navbar" style="width: 100%">
+	<ul>
+		<li><a href="index.html" class="linklist">Home</a></li>
+		<li><a href="contact.html" class="linklist">Contact</a></li>
+
+	</ul>
+	<a href="#" id="ham_button" class="hamburger"><i class="fa fa-bars" aria-hidden="true" onclick="myHamburger();return false;"></i></a>
+
+
+</div>
+
+<div class="parallax"></div>
+<div id="myHamb" class="ham_lista">
+	<p style="padding: 0 3px 0; margin: 0;">My Projects:</p>
+	<hr style="color: white; margin: 5px 3px">
+	<ul id="hamb_proj" class="myHambProj">
+<li><a href="calcReact.html" class="link_ham">Calculator</a></li>
+    <li><a href="pacman.html" class="link_ham">Pacman</a></li>
+    <li><a href="silma.html" class="link_ham">Silmarilion Website</a></li>
+    <li><a href="form.html" class="link_ham">Secret code</a></li>
+     <li><a href="proj1.html" class="link_ham">Food app</a></li>
+    <li><a href="event2.html" class="link_ham">Event Planner</a></li>
+</ul>
+  
+  	</div>
+
+<div class="naziv_proj">Calculator</div>
+
+<div class="explain">
+	<h1 style="padding-top: 10px">Calculator</h1>
+	<hr class="hr">
+	<p style="padding: 15px;"><b>Technologies:</b> React, JavaScript, HTML, CSS.<br>
+<b>Description:</b><br>This web application is developed for PC devices. It represents a calculator, meant to be used for mathematical operations such as adding, subtracting, multiplying, dividing... You can delete numbers or clear all. It's very easy to use.<br> It was developed entirely with React.js and contains custom components logic.
+<br>
+<div class="proj_linkovi">
+<a href="https://calculator-react-ab.netlify.app/" ><b>See the Project</b></a> |
+<a href="https://github.com/anchilla/calculator_react" ><b>The CODE</b></a>
+</div>
+
+</p>
+</div>
+
+
+	<h2 class="see_pic2">Image Gallery</h2>
+	<hr class="hr2">
+	<h4 class="see_pic">Click on pictures to see full size:</h4>
+	<div class="box">
+		<div class="image">
+			<a href="#vS"><img src="projekti/calc1.JPG" alt="projekat" onclick="currentImg(0); showPicture(this)" role="button">
+			</a>
+		</div>
+		<div class="image">
+			<a href="#vS"><img src="projekti/calc2.JPG" alt="projekat" onclick="currentImg(1); showPicture(this)" role="button">
+			</a>
+		</div>
+		<div class="image">
+			<a href="#vS"><img src="projekti/calc3.JPG" alt="projekat" onclick="currentImg(2); showPicture(this)" role="button">
+			</a>
+		</div>
+				<div class="image">
+			<a href="#vS"><img src="projekti/calc4.JPG" alt="projekat" onclick="currentImg(3); showPicture(this)" role="button">
+			</a>
+		</div>
+
+</div>
+	<div class="velika_slika" id="vS">
+		<span onclick="this.parentElement.style.display='none'" class="button">&times;</span>
+
+  <img id="velImg" style="width:100%">
+<a class="prev" onclick="prevNextImg(-1)" >&#10094;</a>
+    <a class="next" onclick="prevNextImg(1)">&#10095;</a>
+
+</div>
+
+<div class="parallax"></div>
+
+
+<footer class="footer" style="background: #28283e">
+			<ul>
+		<li class="email">
+			<i class="fa fa-envelope" aria-hidden="true"></i>anabjrc@gmail.com</li>
+		<li><a href="https://github.com/anchilla">
+			<i class="fa fa-github" aria-hidden="true"></i>github.com/anchilla</a></li>
+		<li><a href="https://www.linkedin.com/in/ana-bajric-b48913212/">
+			<i class="fa fa-linkedin-square" aria-hidden="true"></i>linkedin
+		</a></li>
+	</ul>
+
+<div class="dole">
+	<a href="#nav" class="back_top">Back to top</a>
+</div>
+		</footer>
+
+
+<script>
+
+	function myHamburger() {
+  var x = document.getElementById("myHamb");
+if (x.style.display === "block" ) {
+    x.style.display = "none";
+  } else {
+  	x.style.display = "block";
+}
+}
+document.addEventListener("mouseup", function mouseClick(event){
+		var x = document.getElementById("myHamb");
+		var y = document.getElementById("hamb_proj");
+		var z = document.getElementById("ham_button");
+	
+		if( x.style.display = "block" && event.target.parentNode != x 
+		 && event.target.parentNode != y && event.target.parentNode != z)
+			{x.style.display = "none";
+	}
+	}) 
+
+	const slike = ["projekti/calc1.JPG", "projekti/calc2.JPG", "projekti/calc3.JPG", "projekti/calc4.JPG"];
+
+	var imgIndex = 0;
+
+	function showPicture(imgs) {
+  var expandImg = document.getElementById("velImg");
+  //expandImg.src = imgs.src;
+  expandImg.parentElement.style.display = "block";
+}
+
+function currentImg(index) {
+//treba da uzima podatke iz niza i stavi ih u element src
+	var expandImg = document.getElementById("velImg");
+	imgIndex = index;
+		if(imgIndex == slike.length){
+		imgIndex = 0;
+}
+	if(imgIndex < 0){
+		imgIndex = slike.length -1;
+}
+	expandImg.src = slike[imgIndex];
+
+}
+
+function prevNextImg(n){
+	currentImg(imgIndex+=n);
+	
+}
+
+</script>
+</body>
+
+
+</html>

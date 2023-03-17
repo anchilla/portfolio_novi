@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Portfolio Project</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My Portfolio project">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="silma.css">
+		</head>
+<body>
+
+<div id="nav" class="navbar" style="width: 100%">
+	<ul>
+
+		<li><a href="index.html" class="linklist">Home</a></li>
+		<li><a href="contact.html" class="linklist">Contact</a></li>
+
+	</ul>
+	<a href="#" id="ham_button" class="hamburger"><i class="fa fa-bars" aria-hidden="true" onclick="myHamburger();return false;"></i></a>
+
+
+</div>
+
+<div class="parallax"></div>
+<div id="myHamb" class="ham_lista">
+	<p style="padding: 0 3px 0; margin: 0;">My Projects:</p>
+	<hr style="color: white; margin: 5px 3px">
+	<ul id="hamb_proj" class="myHambProj">
+<li><a href="calcReact.html" class="link_ham">Calculator</a></li>
+    <li><a href="pacman.html" class="link_ham">Pacman</a></li>
+    <li><a href="silma.html" class="link_ham">Silmarilion Website</a></li>
+    <li><a href="form.html" class="link_ham">Secret code</a></li>
+     <li><a href="proj1.html" class="link_ham">Food app</a></li>
+    <li><a href="event2.html" class="link_ham">Event Planner</a></li>
+</ul>
+  
+  	</div>
+
+<div class="naziv_proj">Silmarilion Kristali Website</div>
+
+<div class="explain">
+	<h1 style="padding-top: 10px">Silmarilion Kristali</h1>
+	<hr class="hr">
+	<p style="padding: 15px;"><b>Technologies:</b> HTML, CSS, JavaScript. PHP was used to connect to a server.<br>
+<b>Description:</b><br>
+This website is my first freelance project. It's made to be responsive and can be viewed by a variety of devices, such as mobile phones, tablets, laptops, PCs and more. It's made for a company Silmarilion Kristali, a business based in Belgrade, Serbia. They sell jewelry made of gemstones and provide hand made products. The website showcases their products and services and information about how they started. There's a search option as well, which helps the customer to find an item if they are looking for something in particular. Every page is designed to be aesthetically pleasing and easy to navigate through.<br> 
+<div class="proj_linkovi">
+<a href="http://silmarilion.rs/index.html"><b>See the Project</b></a> |
+<a href="https://github.com/anchilla/silma"><b>The CODE</b></a>
+</div>
+</p>
+</div>
+
+<h2 class="see_pic2">Image Gallery</h2>
+	<hr class="hr2">
+	<h4 class="see_pic">Click on pictures to see full size:</h4>
+	<div class="box">
+		<div class="image">
+			<a href="#vS"><img src="projekti/silma_home.JPG" alt="projekat" onclick="currentImg(0); showPicture(this)" role="button">
+			</a>
+		</div>
+		<div class="image">
+			<a href="#vS"><img src="projekti/silma_fig.JPG" alt="projekat" onclick="currentImg(1); showPicture(this)" role="button">
+			</a>
+		</div>
+		<div class="image">
+			<a href="#vS"><img src="projekti/silma_hor.JPG" alt="projekat" onclick="currentImg(2); showPicture(this)" role="button">
+			</a>
+		</div>
+		<div class="image">
+			<a href="#vS"><img src="projekti/silma_nak.JPG" alt="projekat" onclick="currentImg(3); showPicture(this)" role="button">
+			</a>
+		</div>
+		<div class="image">
+			<a href="#vS"><img src="projekti/silma_obr.JPG" alt="projekat" onclick="currentImg(4); showPicture(this)" role="button">
+			</a>
+		</div>
+		<div class="image">
+			<a href="#vS"><img src="projekti/silma_pogled.JPG" alt="projekat" onclick="currentImg(5); showPicture(this)" role="button">
+			</a>
+		</div>
+		<div class="image">
+			<a href="#vS"><img src="projekti/silma_pr.JPG" alt="projekat" onclick="currentImg(6); showPicture(this)" role="button">
+			</a>
+		</div>
+		<div class="image">
+			<a href="#vS"><img src="projekti/silma_sir.JPG" alt="projekat" onclick="currentImg(7); showPicture(this)" role="button">
+			</a>
+		</div>
+		<div class="image">
+			<a href="#vS"><img src="projekti/simla_kont.JPG" alt="projekat" onclick="currentImg(8); showPicture(this)" role="button">
+			</a>
+		</div>
+		<div class="image">
+			<a href="#vS"><img src="projekti/simla_okr.JPG" alt="projekat" onclick="currentImg(9); showPicture(this)" role="button">
+			</a>
+		</div>
+		<div class="image">
+			<a href="#vS"><img src="projekti/simla_search.JPG" alt="projekat" onclick="currentImg(10); showPicture(this)" role="button">
+			</a>
+		</div>
+</div>
+
+		<div class="velika_slika" id="vS">
+		<span onclick="this.parentElement.style.display='none'" id="btn" class="button">&times;</span>
+
+  <img id="velImg" style="width: 100%">
+  <a class="prev" onclick="prevNextImg(-1)" >&#10094;</a>
+    <a class="next" onclick="prevNextImg(1)">&#10095;</a>
+
+</div>
+
+
+<div class="parallax"></div>
+
+<footer class="footer" style="background: #28283e">
+			<ul>
+		<li class="email">
+			<i class="fa fa-envelope" aria-hidden="true"></i>anabjrc@gmail.com</li>
+		<li><a href="https://github.com/anchilla">
+			<i class="fa fa-github" aria-hidden="true"></i>github.com/anchilla</a></li>
+		<li><a href="https://www.linkedin.com/in/ana-bajric-b48913212/">
+			<i class="fa fa-linkedin-square" aria-hidden="true"></i>linkedin
+		</a></li>
+	</ul>
+	<div class="dole">
+	<a href="#nav" class="back_top">Back to top</a>
+</div>
+		</footer>
+
+<script>
+
+	function myHamburger() {
+  var x = document.getElementById("myHamb");
+if (x.style.display === "block" ) {
+    x.style.display = "none";
+  } else {
+  	x.style.display = "block";
+}
+}
+document.addEventListener("mouseup", function mouseClick(event){
+		var x = document.getElementById("myHamb");
+		var y = document.getElementById("hamb_proj");
+		var z = document.getElementById("ham_button");
+	
+		if( x.style.display = "block" && event.target.parentNode != x 
+		 && event.target.parentNode != y && event.target.parentNode != z)
+			{x.style.display = "none";
+	}
+	}) 
+
+	const slike = ["projekti/silma_home.JPG", "projekti/silma_fig.JPG",
+"projekti/silma_hor.JPG", "projekti/silma_nak.JPG", "projekti/silma_obr.JPG", 
+"projekti/silma_pogled.JPG", "projekti/silma_pr.JPG", "projekti/silma_sir.JPG",
+"projekti/simla_kont.JPG", "projekti/simla_okr.JPG", "projekti/simla_search.JPG"]
+
+	var imgIndex = 0;
+
+	function showPicture(imgs) {
+  var expandImg = document.getElementById("velImg");
+  //expandImg.src = imgs.src;
+  expandImg.parentElement.style.display = "block";
+}
+
+function currentImg(index) {
+//treba da uzima podatke iz niza i stavi ih u element src
+	var expandImg = document.getElementById("velImg");
+	imgIndex = index;
+		if(imgIndex == slike.length){
+		imgIndex = 0;
+}
+	if(imgIndex < 0){
+		imgIndex = slike.length -1;
+}
+	expandImg.src = slike[imgIndex];
+
+}
+
+function prevNextImg(n){
+	currentImg(imgIndex+=n);
+	
+}
+
+</script>
+</body>
+
+
+</html>

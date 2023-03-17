@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Portfolio Project</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My Android project">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="silma.css">
+		</head>
+<body>
+
+<div id="nav" class="navbar" style="width: 100%">
+	<ul>
+
+		<li><a href="index.html" class="linklist">Home</a></li>
+		<li><a href="contact.html" class="linklist">Contact</a></li>
+
+	</ul>
+	<a href="#" id="ham_button" class="hamburger"><i class="fa fa-bars" aria-hidden="true" onclick="myHamburger();return false;"></i></a>
+
+
+</div>
+
+<div class="parallax"></div>
+<div id="myHamb" class="ham_lista">
+	<p style="padding: 0 3px 0; margin: 0;">My Projects:</p>
+	<hr style="color: white; margin: 5px 3px">
+	<ul id="hamb_proj" class="myHambProj">
+<li><a href="calcReact.html" class="link_ham">Calculator</a></li>
+    <li><a href="pacman.html" class="link_ham">Pacman</a></li>
+    <li><a href="silma.html" class="link_ham">Silmarilion Website</a></li>
+    <li><a href="form.html" class="link_ham">Secret code</a></li>
+     <li><a href="proj1.html" class="link_ham">Food app</a></li>
+    <li><a href="event2.html" class="link_ham">Event Planner</a></li>
+</ul>
+  
+  	</div>
+
+<div class="naziv_proj">Healthy Food app</div>
+
+<div class="explain">
+	<h1 style="padding-top: 10px">Healthy food app</h1>
+	<hr class="hr">
+	<p style="padding: 15px;">
+<b>Technologies:</b> Java, MySQL, XML, Android Studio.<br>
+<b>Description:</b><br>
+This application was made for Android phones. It has a built-in database of recipes and allows saving custom recipes. There is also an option of marking your favourite recipes. It contins a variety of delicious recipes to cook, from sweet to savory there's something for everybody.<br>
+This was my first project, and I value everything that I learnd from it. From working with databases to designing and planing out the work needed to finalize everything, it was a very significant learning experience.<br>
+It contains everything Android related such as activities, fragments and event based programming. It was done in Android studio 4.1.1.<br>
+<div class="proj_linkovi">
+<a href="https://github.com/anchilla/healthy_recipes_app" ><b>The CODE</b></a>
+ </div>
+</p>
+</div>
+
+	<h2 class="see_pic2">Image Gallery</h2>
+	<hr class="hr2">
+	<h4 class="see_pic">Click on pictures to see full size:</h4>
+	<div class="box">
+		<div class="image">
+			<a href="#vS"><img src="projekti/foodapp3.jpg" alt="projekat" onclick="currentImg(0);showPicture(this)" role="button">
+			</a>
+		</div>
+		<div class="image">
+			<a href="#vS"><img src="projekti/foodapp1.jpg" alt="projekat" onclick="currentImg(1);showPicture(this)" role="button">
+			</a>
+		</div>
+		<div class="image">
+			<a href="#vS"><img src="projekti/foodapp2.jpg" alt="projekat" onclick="currentImg(2);showPicture(this)" role="button">
+			</a>
+		</div>
+		<div class="image">
+			<a href="#vS"><img src="projekti/foodapp4.jpg" alt="projekat" onclick="currentImg(3);showPicture(this)" role="button">
+			</a>
+		</div>
+		<div class="image">
+			<a href="#vS"><img src="projekti/foodapp5.jpg" alt="projekat" onclick="currentImg(4);showPicture(this)" role="button">
+			</a>
+		</div>
+
+		<div class="image">
+			<a href="#vS"><img src="projekti/foodapp6.jpg" alt="projekat" onclick="currentImg(5);showPicture(this)" role="button">
+			</a>
+		</div>
+
+		<div class="image">
+			<a href="#vS"><img src="projekti/foodapp9.jpg" alt="projekat" onclick="currentImg(6);showPicture(this)" role="button">
+			</a>
+		</div>
+
+		<div class="image">
+			<a href="#vS"><img src="projekti/foodapp10.jpg" alt="projekat" onclick="
+			currentImg(7);showPicture(this)" role="button">
+			</a>
+		</div>
+
+		<div class="image">
+			<a href="#vS"><img src="projekti/foodapp12.jpg" alt="projekat" onclick="currentImg(8);showPicture(this)" role="button">
+			</a>
+		</div>
+
+		<div class="image">
+			<a href="#vS"><img src="projekti/foodapp11.jpg" alt="projekat" onclick="currentImg(9);showPicture(this)" role="button">
+			</a>
+		</div>
+
+		<div class="image">
+			<a href="#vS"><img src="projekti/foodapp13.jpg" alt="projekat" onclick="currentImg(10); showPicture(this)" role="button">
+			</a>
+		</div>
+	</div>
+	<div class="velika_slika" id="vS">
+		<span onclick="this.parentElement.style.display='none'" class="button">&times;</span>
+
+  <img id="velImg" style="width:100%">
+<a class="prev" onclick="prevNextImg(-1)" >&#10094;</a>
+    <a class="next" onclick="prevNextImg(1)">&#10095;</a>
+
+</div>
+
+
+<!--
+<div id="myLightbox" class="lightbox">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="inner_light">
+
+  	 <div class="mySlides">
+      <p id="slide_text" class="slika_text">#</p>
+      <img id="imgSlide" src="#" >
+    </div>
+
+	<a class="prev" onclick="prevNextSlide(-1)">&#10094;</a>
+    <a class="next" onclick="prevNextSlide(1)">&#10095;</a>
+</div>
+</div>
+-->
+
+
+<div class="parallax"></div>
+
+<footer class="footer" style="background: #28283e">
+			<ul>
+		<li class="email">
+			<i class="fa fa-envelope" aria-hidden="true"></i>anabjrc@gmail.com</li>
+		<li><a href="https://github.com/anchilla">
+			<i class="fa fa-github" aria-hidden="true"></i>github.com/anchilla</a></li>
+		<li><a href="https://www.linkedin.com/in/ana-bajric-b48913212/">
+			<i class="fa fa-linkedin-square" aria-hidden="true"></i>linkedin
+		</a></li>
+	</ul>
+
+<div class="dole">
+	<a href="#nav" class="back_top">Back to top</a>
+</div>
+		</footer>
+
+<script>
+
+	function myHamburger() {
+  var x = document.getElementById("myHamb");
+if (x.style.display === "block" ) {
+    x.style.display = "none";
+  } else {
+  	x.style.display = "block";
+}
+}
+document.addEventListener("mouseup", function mouseClick(event){
+		var x = document.getElementById("myHamb");
+		var y = document.getElementById("hamb_proj");
+		var z = document.getElementById("ham_button");
+	
+		if( x.style.display = "block" && event.target.parentNode != x 
+		 && event.target.parentNode != y && event.target.parentNode != z)
+			{x.style.display = "none";
+	}
+	}) 
+
+
+	const slike = ["projekti/foodapp3.jpg", "projekti/foodapp1.jpg", 
+"projekti/foodapp2.jpg", "projekti/foodapp4.jpg", "projekti/foodapp5.jpg",
+"projekti/foodapp6.jpg", "projekti/foodapp9.jpg", "projekti/foodapp10.jpg", 
+"projekti/foodapp12.jpg", "projekti/foodapp11.jpg", "projekti/foodapp13.jpg"]
+
+	var imgIndex = 0;
+
+	function showPicture(imgs) {
+  var expandImg = document.getElementById("velImg");
+  //expandImg.src = imgs.src;
+  expandImg.parentElement.style.display = "block";
+}
+
+function currentImg(index) {
+//treba da uzima podatke iz niza i stavi ih u element src
+	var expandImg = document.getElementById("velImg");
+	imgIndex = index;
+		if(imgIndex == slike.length){
+		imgIndex = 0;
+}
+	if(imgIndex < 0){
+		imgIndex = slike.length -1;
+}
+	expandImg.src = slike[imgIndex];
+
+}
+
+function prevNextImg(n){
+	currentImg(imgIndex+=n);
+	
+}
+
+</script>
+</body>
+
+
+</html>

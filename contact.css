@@ -1,0 +1,310 @@
+body{
+
+	background-image: url("images/pexels-oran2.jpeg");
+	background-color: #F5F5F5;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+
+	height: 100%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+.navbar{
+	padding: 0px;
+	height: 44px;
+	box-shadow:0 6px 8px 0 rgba(0, 0, 0, 0.30);
+	-webkit-box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.30);
+	-moz-box-shadow:0 6px 8px 0 rgba(0, 0, 0, 0.30);
+
+	position: relative;
+	background: #28283e;
+}
+
+.navbar ul{
+	list-style: none;
+	margin: 0;
+	text-align: left;
+	width: 90%;
+	height: 44px;
+	padding-left: 0px;
+}
+
+.navbar li{
+	display: inline-block;
+	height: 44px;
+}
+
+.navbar .linklist{
+	text-decoration: none;
+	color: #efeff5;
+	width: 150px;
+	display: block;
+	padding: 10px 5px;
+	font-size: 19px;
+	height: 44px;
+	text-align: center;
+}
+
+.navbar .linklist:hover{
+	background: #9679ec;
+}
+
+.navbar .hamburger{
+	position: absolute; 
+	top: 9px;
+	font-size: 24px;
+	right: 40px; 
+	width: auto;
+	height: auto;
+	color: #efeff5;
+	line-height: 0;
+}
+.hamburger i:hover{
+	color: #bf80ff;
+}
+
+#myHamb{
+	background: #28283e;
+	color: white;
+	position: absolute;
+	top: 44px;
+	right: 0;
+	display: none;
+	padding: 10px 10px;
+	border-radius: 0 0 10px 10px;
+	z-index: 1;
+}
+
+.myHambProj{
+	list-style: none;
+	padding: 0px 20px 0px;
+	margin: 0;
+
+}
+.myHambProj a:hover{
+	color: #bf80ff;
+}
+.myHambProj li{
+	margin: 0 0 5px 0;
+}
+.link_ham{
+	text-decoration: none;
+	color: white;
+	padding: 3px 0;
+}
+
+.cont{
+	margin: 80px auto;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+
+	border-style: solid;
+	border-color: white;
+	border-radius: 15px;
+	background-color: #28283e;
+	width: 35%;
+}
+
+.footer{
+	padding: 40px;
+	
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	margin-top: 70px;
+	bottom: 0;
+	width: 100%;
+	position: absolute;
+}
+.footer p{
+	margin: 0;
+}
+
+.cont_list li{
+	display: block;
+	margin-bottom: 8px;
+}
+
+.cont_list li a{
+	font-size: 21px;
+	color:  #efeff5;
+	padding-right: 40px;
+	text-decoration: none;
+
+}
+
+.cont_list a:hover{
+	color: #bf80ff;
+}
+.cont_list a:hover i{
+	color: #bf80ff;
+}
+.cont_list i{
+	padding: 5px;
+	color:  #efeff5;
+}
+
+.cont_list .email{
+	font-size: 21px;
+	color:  #efeff5;
+	padding-right: 40px;
+}
+
+.cont_list .email:hover{
+	color: #bf80ff;
+}
+.cont_list .email:hover i{
+	color: #bf80ff;
+}
+
+@media only screen and (min-width: 1440px){
+
+
+	.cont{
+		margin: 270px auto;
+		width:50%;
+	}
+	.cont_list li a{
+		font-size: 25px;
+	}
+	.cont_list .email{
+		font-size: 25px;
+	}
+}
+
+@media only screen and (min-width: 1800px){
+
+	.navbar li{
+		height: 50px;
+	}
+
+	.navbar .linklist{
+		font-size: 22px;
+		height: 50px;
+	}
+	.navbar{
+		height: 50px;
+	}
+
+	.navbar ul{
+		height: 50px;
+	}
+	.navbar .hamburger{
+		top: 12px;
+		width: 18px;
+		font-size: 20px;
+	}
+	.myHambProj li a{
+		font-size: 18px;
+	}
+	#myHamb p{
+		font-size: 18px;
+	}
+	.cont{
+		padding: 80px;
+		width:40%;
+	}
+	.cont_list li a{
+		font-size: 30px;
+	}
+	.cont_list .email{
+		font-size: 30px;
+	}
+	h1{
+		font-size: 60px;
+	}
+	.footer{
+		font-size: 27px;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	.cont{
+		margin: 80px auto;
+		width:50%;
+	}
+	.cont_list li a{
+		font-size: 22px;
+	}
+	.cont_list .email{
+		font-size: 22px;
+	}
+}
+
+
+@media only screen and (max-width:900px){
+	.cont{
+		width: 50%;
+
+		margin: 90px auto;
+	}
+	.cont_list li a{
+		font-size: 20px;
+	}
+	.cont_list .email{
+		font-size: 20px;
+
+	}
+	.footer{
+		padding: 20px;
+		font-size: 20px;
+		margin-top: 40px;
+
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.cont{
+		width: 70%;
+		height:65%;
+		margin: 80px auto;
+	}
+	.cont_list li a{
+		font-size: 22px;
+	}
+	.cont_list .email{
+		font-size: 22px;
+
+	}
+	.footer{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 480px)  {
+	.navbar .linklist{
+		width: 100px;
+
+	}
+	.cont{
+
+		margin: 80px auto;
+		width: 75%;
+	}
+	.cont_list{
+		padding-left: 20px;
+	}
+	.cont_list li a{
+		font-size: 16px;
+
+	}
+	.cont_list .email{
+		font-size: 16px;
+	}
+	.footer{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+	.cont{
+		margin: 40px auto;
+		width: 95%;
+	}
+}
