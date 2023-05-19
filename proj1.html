@@ -18,6 +18,9 @@
 		<li><a href="contact.html" class="linklist">Contact</a></li>
 
 	</ul>
+
+    <div id="hamb_text"  ><a href="#" class="hamb_paragr" onclick="myHamburger();return false;" >My projects</a></div>
+	
 	<a href="#" id="ham_button" class="hamburger"><i class="fa fa-bars" aria-hidden="true" onclick="myHamburger();return false;"></i></a>
 
 
@@ -38,17 +41,53 @@
   
   	</div>
 
-<div class="naziv_proj">Healthy Food app</div>
+<a href="#exp" class="naziv_proj">Healthy Food app</a>
 
-<div class="explain">
+<div class="explain" id="exp">
 	<h1 style="padding-top: 10px">Healthy food app</h1>
 	<hr class="hr">
-	<p style="padding: 15px;">
+
+	<div class="explain_all">
+	<div class="explain_tech">
+	<p style="padding: 15px;"><b>Technologies:</b></p>
+	 <ul>
+	 	<li>Java</li>
+	 	<li>MySQL</li> 
+	 	<li>XML</li>
+	 	<li>Android Studio</li>
+	 </ul>
+	<p style="padding: 15px;"><b>Notable features:</b></p>
+	<ul>
+	 	<li>Save your custom recipes</li>
+	 	<li>Favorite (mark your favorites)</li> 
+	 	<li>Built-in Database</li>
+	 	<li>Android activities and fragments</li>
+	 </ul>
+	</div>
+
+<p class="explain_parag" ><b>Description:</b><br>
+This application was made for Android phones. It has a built-in database of recipes which contins a variety of delicious recipes to cook, from sweet to savory there's something for everybody.<br>
+This was my first project, and I value everything that I learnd from it. From working with databases to designing and planing out the work needed to finalize everything, it was a very significant learning experience. </p>
+
+<p class="explain_parag" ><b>Problems and solutions:</b><br>
+In this project most dificult thing was <u>planning things out</u> and developing different activities so that it's easy to use and comprehend. Solution was to test everything out to make sure it's working 
+properly.<br>
+Other problem I ran into was <u>sending data from one activity</u> to another. I solved it by making a new Intent object and getting it in second activity.
+
+</p>
+
+</div>
+
+</div>
+
+<!--	<p style="padding: 15px;">
 <b>Technologies:</b> Java, MySQL, XML, Android Studio.<br>
 <b>Description:</b><br>
 This application was made for Android phones. It has a built-in database of recipes and allows saving custom recipes. There is also an option of marking your favourite recipes. It contins a variety of delicious recipes to cook, from sweet to savory there's something for everybody.<br>
 This was my first project, and I value everything that I learnd from it. From working with databases to designing and planing out the work needed to finalize everything, it was a very significant learning experience.<br>
 It contains everything Android related such as activities, fragments and event based programming. It was done in Android studio 4.1.1.<br>
+-->
+
 <div class="proj_linkovi">
 <a href="https://github.com/anchilla/healthy_recipes_app" ><b>The CODE</b></a>
  </div>
@@ -138,7 +177,7 @@ It contains everything Android related such as activities, fragments and event b
 -->
 
 
-<div class="parallax"></div>
+<!-- <div class="parallax"></div> -->
 
 <footer class="footer" style="background: #28283e">
 			<ul>
@@ -170,9 +209,11 @@ document.addEventListener("mouseup", function mouseClick(event){
 		var x = document.getElementById("myHamb");
 		var y = document.getElementById("hamb_proj");
 		var z = document.getElementById("ham_button");
+var t = document.getElementById("hamb_text");
 	
 		if( x.style.display = "block" && event.target.parentNode != x 
-		 && event.target.parentNode != y && event.target.parentNode != z)
+		 && event.target.parentNode != y && event.target.parentNode != z
+		 && event.target.parentNode != t)
 			{x.style.display = "none";
 	}
 	}) 

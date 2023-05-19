@@ -16,6 +16,9 @@
 		<li><a href="contact.html" class="linklist">Contact</a></li>
 
 	</ul>
+
+    <div id="hamb_text"  ><a href="#" class="hamb_paragr" onclick="myHamburger();return false;" >My projects</a></div>
+	
 	<a href="#" id="ham_button" class="hamburger"><i class="fa fa-bars" aria-hidden="true" onclick="myHamburger();return false;"></i></a>
 
 
@@ -36,14 +39,49 @@
   
   	</div>
 
-<div class="naziv_proj">Event Planner</div>
+<a href="#exp" class="naziv_proj">Event Planner</a>
 
-<div class="explain">
+<div class="explain" id="exp">
 	<h1 style="padding-top: 10px">Event Planner</h1>
 	<hr class="hr">
-	<p style="padding: 15px;"><b>Technologies:</b> Java, Hibernate, HQL, XML, MySQL.<br>
+
+	<div class="explain_all">
+	<div class="explain_tech">
+	<p style="padding: 15px;"><b>Technologies:</b></p>
+	 <ul>
+	 	<li>Java</li>
+	 	<li>Hibernate</li> 
+	 	<li>XML</li>
+	 	<li>MySQL</li>
+	 	<li>HQL</li>
+	 </ul>
+	<p style="padding: 15px;"><b>Notable features:</b></p>
+	<ul>
+
+	 	<li>Notification reminder</li> 
+	 	<li>Swing GUI</li>
+	 	<li>Database, CRUD operations</li>
+	 </ul>
+	</div>
+
+<p class="explain_parag" ><b>Description:</b><br>
+This application was made for Windows. It allows you to save dates and events that are of importance to you. A message will be shown with your data on the day of the event so you don't have to worry about forgetting significant dates. Also, there's a calendar where you can see all your events and have all the information together in one place. </p>
+
+<p class="explain_parag" ><b>Problems and solutions:</b><br>
+The most difficult thing about this project was getting the <u>calendar</u> to be showing proper data because it had a lot of the parts of the project working together, making it a bit more complicated. <br>
+After trying out multiple things, and consulting different websites, I got it to work properly. Solution was to combine the database logic with funcional logic.
+
+</p>
+
+</div>
+
+</div>
+
+<!--	<p style="padding: 15px;"><b>Technologies:</b> Java, Hibernate, HQL, XML, MySQL.<br>
 <b>Description:</b> This application was made for PCs. It allows you to save dates and events that are of importance to you. A message will be shown with your data on the day of the event so you don't have to worry about forgetting significant dates. Also, there's a calendar where you can see all your events and have all the information together in one place. In addition, there's a database which memorizes all your input.<br> This project uses Java programming language, Hibernate ORM as a mapping tool, and SQL and MySQL Workbench 8.0.23 database service. It is made with Eclipse IDE Enterprise 4.19.0 and uses Swing GUI. Developed for Windows.<br>
 The project consists of graphical user interface programming, event handling, crud operations and many other java related algorithams.<br>
+-->
+
 <div class="proj_linkovi">
 <a href="https://github.com/anchilla/event_planner_updated/tree/master" ><b>The CODE</b></a>
 </div>
@@ -102,7 +140,7 @@ The project consists of graphical user interface programming, event handling, cr
 
 </div>
 
-<div class="parallax"></div>
+<!-- <div class="parallax"></div> -->
 
 
 <footer class="footer" style="background: #28283e">
@@ -136,9 +174,11 @@ document.addEventListener("mouseup", function mouseClick(event){
 		var x = document.getElementById("myHamb");
 		var y = document.getElementById("hamb_proj");
 		var z = document.getElementById("ham_button");
+var t = document.getElementById("hamb_text");
 	
 		if( x.style.display = "block" && event.target.parentNode != x 
-		 && event.target.parentNode != y && event.target.parentNode != z)
+		 && event.target.parentNode != y && event.target.parentNode != z
+		 && event.target.parentNode != t)
 			{x.style.display = "none";
 	}
 	}) 

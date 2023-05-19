@@ -18,6 +18,9 @@
 		<li><a href="contact.html" class="linklist">Contact</a></li>
 
 	</ul>
+
+    <div id="hamb_text"  ><a href="#" class="hamb_paragr" onclick="myHamburger();return false;" >My projects</a></div>
+	
 	<a href="#" id="ham_button" class="hamburger"><i class="fa fa-bars" aria-hidden="true" onclick="myHamburger();return false;"></i></a>
 
 
@@ -38,14 +41,49 @@
   
   	</div>
 
-<div class="naziv_proj">Pacman Game</div>
+<a href="#exp" class="naziv_proj">Pacman Game</a>
 
-<div class="explain">
+<div class="explain" id="exp">
 	<h1 style="padding-top: 10px">Pacman Game</h1>
 	<hr class="hr">
-	<p style="padding: 15px;"><b>Technologies:</b> JavaScript, HTML, CSS.<br>
+
+	<div class="explain_all">
+	<div class="explain_tech">
+	<p style="padding: 15px;"><b>Technologies:</b></p>
+	 <ul>
+	 	<li>JavaScript</li>
+	 	<li>HTML</li> 
+	 	<li>CSS</li>
+	 </ul>
+	<p style="padding: 15px;"><b>Notable features:</b></p>
+	<ul>
+	 	<li>HTML Canvas</li>
+	 	<li>Tile Map (Walls)</li> 
+	 	<li>AI for NPCs</li>
+	 	<li>Collision Detection</li>
+	 	<li>Keeping Score</li>
+	 	<li>Async Function</li>
+	 </ul>
+	</div>
+
+<p class="explain_parag" ><b>Description:</b><br>
+This project is a web game designed for PC devices. It's a Pacman game, with ghosts and pellets. Includes features like your score, three lives, pause, ghosts and end game. It has additional sound effects for better user experience.<br> <b><u>Tip:</u> Control pacman with keys "w" for upward movement, "s" for downward movement, "d" for right movement and "a" for left movement. Make sure your CapsLock is not pressed. </b> </p>
+
+<p class="explain_parag" ><b>Problems and solutions:</b><br>
+	<u>Ghost AI</u> turned out to be a more complicated feature then I had previously anticipated and I haven't done anything like it before. But, after some trial and error, and watching many tutorials, I found a solution that worked for my project. The key was to have an array of possible free pathways depending on where a ghost is located and where it could go.<br>
+Also, <u>detecting collision</u> was no small task either. Solving it involved using some geometry and angles, depending on where the object is.
+
+</p>
+
+</div>
+
+</div>
+
+<!--	<p style="padding: 15px;"><b>Technologies:</b> JavaScript, HTML, CSS.<br>
 <b>Description:</b><br>
-This project is a web game designed for PC devices. It's a Pacman game, with ghosts and pellets. Includes features like your score, three lives, pause, ghost AI and end game. It has additional sound effects for better user experience. This project contains event listeners, AI logic for ghosts, and working with canvas JS.<br> <b>Tip: Control pacman with keys "w" for upward movement, "s" for downward movement, "d" for right movement and "a" for left movement. Make sure your CapsLock is not pressed. </b><br>
+This project is a web game designed for PC devices. It's a Pacman game, with ghosts and pellets. Includes features like your score, three lives, pause, ghosts and end game. It has additional sound effects for better user experience. This project contains event listeners, AI logic for ghosts, and working with canvas JS.<br> <b>Tip: Control pacman with keys "w" for upward movement, "s" for downward movement, "d" for right movement and "a" for left movement. Make sure your CapsLock is not pressed. </b><br>
+-->
+
 <div class="proj_linkovi">
 <a href="https://pac-manproj.netlify.app/" ><b>See the Project</b></a> |
 <a href="https://github.com/anchilla/pacman_finished" ><b>The CODE</b></a> <br>
@@ -86,7 +124,7 @@ This project is a web game designed for PC devices. It's a Pacman game, with gho
 </div>
 
 
-<div class="parallax"></div>
+<!-- <div class="parallax"></div> -->
 
 <footer class="footer" style="background: #28283e">
 			<ul>
@@ -117,9 +155,11 @@ document.addEventListener("mouseup", function mouseClick(event){
 		var x = document.getElementById("myHamb");
 		var y = document.getElementById("hamb_proj");
 		var z = document.getElementById("ham_button");
+var t = document.getElementById("hamb_text");
 	
 		if( x.style.display = "block" && event.target.parentNode != x 
-		 && event.target.parentNode != y && event.target.parentNode != z)
+		 && event.target.parentNode != y && event.target.parentNode != z
+		 && event.target.parentNode != t)
 			{x.style.display = "none";
 	}
 	}) 

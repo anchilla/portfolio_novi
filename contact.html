@@ -17,6 +17,9 @@
 			<li><a href="index.html" class="linklist">Home</a></li>
 
 		</ul>
+
+	    <div id="hamb_text"  ><a href="#" class="hamb_paragr" onclick="myHamburger();return false;" >My projects</a></div>
+
 		<a href="#" id="ham_button" class="hamburger"><i class="fa fa-bars" aria-hidden="true" onclick="myHamburger();return false;"></i></a>
 
 	</div>
@@ -73,9 +76,11 @@
 					var x = document.getElementById("myHamb");
 					var y = document.getElementById("hamb_proj");
 					var z = document.getElementById("ham_button");
-
-					if( x.style.display = "block" && event.target.parentNode != x 
-						&& event.target.parentNode != y && event.target.parentNode != z)
+var t = document.getElementById("hamb_text");
+	
+		if( x.style.display = "block" && event.target.parentNode != x 
+		 && event.target.parentNode != y && event.target.parentNode != z
+		 && event.target.parentNode != t)
 						{x.style.display = "none";
 				}
 			}) 

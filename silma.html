@@ -18,6 +18,9 @@
 		<li><a href="contact.html" class="linklist">Contact</a></li>
 
 	</ul>
+
+    <div id="hamb_text"  ><a href="#" class="hamb_paragr" onclick="myHamburger();return false;" >My projects</a></div>
+	
 	<a href="#" id="ham_button" class="hamburger"><i class="fa fa-bars" aria-hidden="true" onclick="myHamburger();return false;"></i></a>
 
 
@@ -38,20 +41,49 @@
   
   	</div>
 
-<div class="naziv_proj">Silmarilion Kristali Website</div>
+<a href="#exp" class="naziv_proj">Silmarilion Kristali Website</a>
 
-<div class="explain">
+<div class="explain" id="exp">
 	<h1 style="padding-top: 10px">Silmarilion Kristali</h1>
 	<hr class="hr">
-	<p style="padding: 15px;"><b>Technologies:</b> HTML, CSS, JavaScript. PHP was used to connect to a server.<br>
-<b>Description:</b><br>
-This website is my first freelance project. It's made to be responsive and can be viewed by a variety of devices, such as mobile phones, tablets, laptops, PCs and more. It's made for a company Silmarilion Kristali, a business based in Belgrade, Serbia. They sell jewelry made of gemstones and provide hand made products. The website showcases their products and services and information about how they started. There's a search option as well, which helps the customer to find an item if they are looking for something in particular. Every page is designed to be aesthetically pleasing and easy to navigate through.<br> 
+
+	<div class="explain_all">
+	<div class="explain_tech">
+	<p style="padding: 15px;"><b>Technologies:</b></p>
+	 <ul>
+	 	<li>HTML</li>
+	 	<li>CSS</li> 
+	 	<li>JavaScript</li>
+	 	<li>PHP</li>
+	 </ul>
+	<p style="padding: 15px;"><b>Notable features:</b></p>
+	<ul>
+	 	<li>Lightbox (slidehow variant)</li>
+	 	<li>Search bar</li> 
+	 	<li>Responsive, works for all devices</li>
+	 	<li>Flex box</li>
+	 </ul>
+	</div>
+
+<p class="explain_parag" ><b>Description:</b><br>
+This website is my first freelance project. It's made for a company Silmarilion Kristali, a business based in Belgrade, Serbia. They sell jewelry made of gemstones and provide hand made products. The website showcases their products and services and information about how they started. There's a search option as well, which helps the customer to find an item if they are looking for something in particular. Every page is designed to be aesthetically pleasing and easy to navigate through. </p>
+
+<p class="explain_parag" ><b>Problems and solutions:</b><br>
+	There was a problem with how to get <u>data from previous pages</u> in order to display different images, and make the code less redundant and more globally used in whole project. After trying out a few things, ultimately what worked best was passing data through a link to another page.<br>
+Also, displaying <u>images in a lightbox</u> turned out to be a challenge. After more reasearch on the subject I combined multiple solutions and managed to make it work.
+
+</p>
+
+</div>
+
+</div>
+
 <div class="proj_linkovi">
-<a href="http://silmarilion.rs/index.html"><b>See the Project</b></a> |
+<a href="https://silmarilion.rs/index.html"><b>See the Project</b></a> |
 <a href="https://github.com/anchilla/silma"><b>The CODE</b></a>
 </div>
-</p>
-</div>
+
+
 
 <h2 class="see_pic2">Image Gallery</h2>
 	<hr class="hr2">
@@ -113,7 +145,7 @@ This website is my first freelance project. It's made to be responsive and can b
 </div>
 
 
-<div class="parallax"></div>
+<!-- <div class="parallax"></div> -->
 
 <footer class="footer" style="background: #28283e">
 			<ul>
@@ -144,9 +176,11 @@ document.addEventListener("mouseup", function mouseClick(event){
 		var x = document.getElementById("myHamb");
 		var y = document.getElementById("hamb_proj");
 		var z = document.getElementById("ham_button");
+var t = document.getElementById("hamb_text");
 	
 		if( x.style.display = "block" && event.target.parentNode != x 
-		 && event.target.parentNode != y && event.target.parentNode != z)
+		 && event.target.parentNode != y && event.target.parentNode != z
+		 && event.target.parentNode != t)
 			{x.style.display = "none";
 	}
 	}) 

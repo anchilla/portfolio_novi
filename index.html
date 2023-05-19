@@ -26,6 +26,8 @@
 	<a href="contact.html" class="contact">Contact</a>
 </div>
 
+    <div id="hamb_text"  ><a href="#" class="hamb_paragr" onclick="myHamburger();return false;" >My projects</a></div>
+
 	<a href="#" id="ham_button" class="hamburger"><i class="fa fa-bars" onclick="myHamburger();return false;" ></i></a>
 
 </div>
@@ -33,8 +35,9 @@
 <div class="intro_div ham_lista">
 
 	<div id="myHamb">
-	<p id="p" style="padding: 0 3px 0; margin: 0;">My Projects:</p>
+	<div class="hamb_text_explain"><p id="p" style="padding: 0 3px 0; margin: 0;">My Projects:</p>
 	<hr  id="hrr" style="color: white; margin: 5px 3px;">
+</div>
 	<ul id="hamb_proj" class="myHambProj">
 		<li><a href="calcReact.html" class="link_ham">Calculator</a></li>
     <li><a href="pacman.html" class="link_ham">Pacman</a></li>
@@ -68,7 +71,7 @@
 		<p class="about_me">I am a Front-end developer based in Belgrade, Serbia. <br>
 My interest in coding started with Java programming language in my university days and only grew from there. I decided to learn more about Javascript and to dive deep into front-end technologies. After finishing studies in business and computer applications, I started doing more projects on my own, as well as some freelance work. 
 <p class="about_me">
-My work consists of projects such as websites, web design, games, applications for web and desktop made with React, JavaScript, HTML, CSS and JQuery. Some of these were freelance projects which are represented further down on the page. I have also done some projects with Java, made for Android phones and desktop applications. Feel free to go through anything that peaks your interest.
+My work consists of projects such as websites, web design, games, web applications made with React, JavaScript, HTML, CSS and JQuery. Some of these were freelance projects which are represented further down on the page. I have also done some projects for Android phones and desktop applications made with Java. Feel free to go through anything that peaks your interest.
 </p>
 <p class="about_me">
 I am open to new opportunities and projects. Also, because I like a good challenge, I am interested in anything that would help me expand my knowledge in front-end development.
@@ -183,9 +186,11 @@ document.addEventListener("mouseup", function mouseClick(event){
 		var x = document.getElementById("myHamb");
 		var y = document.getElementById("hamb_proj");
 		var z = document.getElementById("ham_button");
+		var t = document.getElementById("hamb_text");
 	
 		if( x.style.display = "block" && event.target.parentNode != x 
-		 && event.target.parentNode != y && event.target.parentNode != z)
+		 && event.target.parentNode != y && event.target.parentNode != z
+		 && event.target.parentNode != t)
 			{x.style.display = "none";
 	}
 	}) 

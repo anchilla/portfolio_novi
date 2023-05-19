@@ -51,7 +51,29 @@ body{
 .navbar .linklist:hover{
 	background: #9679ec;
 }
-
+.navbar #hamb_text{
+	color: #efeff5;
+	position: absolute;
+	right: 0px;
+	text-align: center;
+	font-size: 19px; 
+	color: white;
+	cursor: pointer;
+}
+.hamb_paragr{
+	text-decoration: none;
+	color: #efeff5;
+	width: 150px;
+	display: block;
+	padding: 10px 0px;
+	font-size: 19px;
+	height: 44px;
+	text-align: center;
+}
+.hamb_paragr:hover{
+	background: #9679ec;
+	color: #efeff5;
+}
 .navbar .hamburger{
 	position: absolute; 
 	top: 9px;
@@ -61,6 +83,7 @@ body{
 	height: auto;
 	color: #efeff5;
 	line-height: 0;
+		display: none;
 }
 .hamburger i:hover{
 	color: #bf80ff;
@@ -194,11 +217,20 @@ body{
 	.navbar ul{
 		height: 50px;
 	}
-	.navbar .hamburger{
+
+	.navbar #hamb_text{
+	font-size: 22px; 
+	height: 50px;
+}
+	.hamb_paragr{
+		height: 50px;
+		font-size: 22px; 
+	}
+	/*.navbar .hamburger{
 		top: 12px;
 		width: 18px;
 		font-size: 20px;
-	}
+	}*/
 	.myHambProj li a{
 		font-size: 18px;
 	}
@@ -275,7 +307,17 @@ body{
 		display: none;
 	}
 }
-
+@media only screen and (max-width: 600px) {
+	.navbar #hamb_text{
+		display: none;
+	}
+	.navbar .hamburger{
+		display: block;
+	}
+	.hamb_text_explain{
+	display: block;
+}
+}
 @media only screen and (max-width: 480px)  {
 	.navbar .linklist{
 		width: 100px;

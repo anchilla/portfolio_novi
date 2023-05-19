@@ -16,6 +16,9 @@
 		<li><a href="contact.html" class="linklist">Contact</a></li>
 
 	</ul>
+
+    <div id="hamb_text"  ><a href="#" class="hamb_paragr" onclick="myHamburger();return false;" >My projects</a></div>
+	
 	<a href="#" id="ham_button" class="hamburger"><i class="fa fa-bars" aria-hidden="true" onclick="myHamburger();return false;"></i></a>
 
 
@@ -36,12 +39,47 @@
   
   	</div>
 
-<div class="naziv_proj">Secret code</div>
+<a href="#exp" class="naziv_proj">Secret code</a>
 
-<div class="explain">
+<div class="explain" id="exp">
 	<h1 style="padding-top: 10px">Secret code</h1>
 	<hr class="hr">
-	<p style="padding: 15px;"><b>Technologies:</b> JavaScript, HTML, CSS.<br>
+
+	<div class="explain_all">
+	<div class="explain_tech">
+	<p style="padding: 15px;"><b>Technologies:</b></p>
+	 <ul >
+	 	<li >HTML</li>
+	 	<li>CSS</li> 
+	 	<li >JavaScript</li>
+
+	 </ul>
+	 	<p style="padding: 15px;"><b>Notable features:</b></p>
+	<ul >
+	 	<li >Responsive</li>
+	 	<li >Form</li> 
+
+	 </ul>
+
+	</div>
+
+<p class="explain_parag" style="padding: 15px;"><b>Description:</b><br>
+This website gives you a classic method for composing secret messages. It uses math logic like square matrices. <br>
+The user can enter a message with no spaces between the words. Maximum message length is 81 characters. A warning will be displayed if there is some wrong input.
+<br>
+<b>Example</b> - If we type: anabajric,<br>
+this will be the end result: abr nai ajc.<br> </p>
+
+<p class="explain_parag" ><b>Problems and solutions:</b><br>
+The problem when building this project was making the form <u>use algorithm</u> for the matrix. But, after trying some examples, I managed to find a solution that worked for this project.
+
+</p>
+
+</div>
+
+</div>
+
+<!--	<p style="padding: 15px;"><b>Technologies:</b> JavaScript, HTML, CSS.<br>
 <b>Description:</b>This website gives you a classic method for composing secret messages, which is called a square code. The spaces are removed from the english text and the characters are written into a square (or rectangle). It uses math logic like square matrices. It's made to be responsive and can be viewed by many devices, such as mobile phones, tablets, laptops, PCs... The project consists of forms and javascript logic used to handle the operations.<br>
 The user can enter a message with no spaces between the words. Maximum message length is 81 characters. A warning will be displayed if there is some wrong input.
 <br>
@@ -51,6 +89,7 @@ Message will be processed like this:<br>
 ana baj ric<br>
 And this will be the end result:<br>
 abr nai ajc<br>
+-->
 
 <div class="proj_linkovi">
 <a href="https://formanab.netlify.app/" ><b>See the Project</b></a> |
@@ -87,7 +126,7 @@ abr nai ajc<br>
 
 </div>
 
-<div class="parallax"></div>
+<!-- <div class="parallax"></div> -->
 
 
 <footer class="footer" style="background: #28283e">
@@ -121,9 +160,11 @@ document.addEventListener("mouseup", function mouseClick(event){
 		var x = document.getElementById("myHamb");
 		var y = document.getElementById("hamb_proj");
 		var z = document.getElementById("ham_button");
+var t = document.getElementById("hamb_text");
 	
 		if( x.style.display = "block" && event.target.parentNode != x 
-		 && event.target.parentNode != y && event.target.parentNode != z)
+		 && event.target.parentNode != y && event.target.parentNode != z
+		 && event.target.parentNode != t)
 			{x.style.display = "none";
 	}
 	}) 

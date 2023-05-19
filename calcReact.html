@@ -17,6 +17,9 @@
 		<li><a href="contact.html" class="linklist">Contact</a></li>
 
 	</ul>
+
+    <div id="hamb_text"  ><a href="#" class="hamb_paragr" onclick="myHamburger();return false;" >My projects</a></div>
+	
 	<a href="#" id="ham_button" class="hamburger"><i class="fa fa-bars" aria-hidden="true" onclick="myHamburger();return false;"></i></a>
 
 
@@ -37,14 +40,48 @@
   
   	</div>
 
-<div class="naziv_proj">Calculator</div>
+<a href="#exp" class="naziv_proj">Calculator</a>
 
-<div class="explain">
+<div class="explain" id="exp">
 	<h1 style="padding-top: 10px">Calculator</h1>
 	<hr class="hr">
-	<p style="padding: 15px;"><b>Technologies:</b> React, JavaScript, HTML, CSS.<br>
+
+	<div class="explain_all">
+	<div class="explain_tech">
+	<p style="padding: 15px;"><b>Technologies:</b></p>
+	 <ul>
+	 	<li>React</li>
+	 	<li>Node.js</li>
+	 	<li>CSS</li> 
+	 	<li>JavaScript</li>
+	 	<li>HTML</li>
+	 </ul>
+	<p style="padding: 15px;"><b>Notable features:</b></p>
+	<ul>
+	 	<li>Grid layout</li>
+	 	<li>React hooks</li> 
+	 	<li>Custom components</li>
+
+	 </ul>
+	</div>
+
+<p class="explain_parag" ><b>Description:</b><br>
+This web application is developed for PC devices. It represents a calculator, meant to be used for mathematical operations. You can delete numbers or clear all. It's very easy to use.<br> It was developed entirely with React.js and contains custom components logic. </p>
+
+<p class="explain_parag" ><b>Problems and solutions:</b><br>
+The problem that I had with this project was making the calculator <u>show the result</u> of operation.<br>
+I tried a lot of things, but what ultimately worked was making a global variable to corespond to different operations and actions the user is taking. And to use those different cases to perform various commands.
+
+</p>
+
+</div>
+
+</div>
+
+	<!--<p style="padding: 15px;"><b>Technologies:</b> React, JavaScript, HTML, CSS.<br>
 <b>Description:</b><br>This web application is developed for PC devices. It represents a calculator, meant to be used for mathematical operations such as adding, subtracting, multiplying, dividing... You can delete numbers or clear all. It's very easy to use.<br> It was developed entirely with React.js and contains custom components logic.
 <br>
+-->
 <div class="proj_linkovi">
 <a href="https://calculator-react-ab.netlify.app/" ><b>See the Project</b></a> |
 <a href="https://github.com/anchilla/calculator_react" ><b>The CODE</b></a>
@@ -85,7 +122,7 @@
 
 </div>
 
-<div class="parallax"></div>
+<!-- <div class="parallax"></div> -->
 
 
 <footer class="footer" style="background: #28283e">
@@ -119,9 +156,11 @@ document.addEventListener("mouseup", function mouseClick(event){
 		var x = document.getElementById("myHamb");
 		var y = document.getElementById("hamb_proj");
 		var z = document.getElementById("ham_button");
+var t = document.getElementById("hamb_text");
 	
 		if( x.style.display = "block" && event.target.parentNode != x 
-		 && event.target.parentNode != y && event.target.parentNode != z)
+		 && event.target.parentNode != y && event.target.parentNode != z
+		 && event.target.parentNode != t)
 			{x.style.display = "none";
 	}
 	}) 
