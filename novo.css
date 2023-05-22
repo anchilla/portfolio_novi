@@ -58,6 +58,7 @@ body{
 .navbar #hamb_text{
 	color: #efeff5;
 	position: absolute;
+	top: 0;
 	right: 0px;
 	text-align: center;
 	font-size: 19px; 
